@@ -1,3 +1,0 @@
-# Dependency sistem (jika dibutuhkan oleh wordcloud/matplotlib di Streamlit Cloud)
-# Biasanya tidak wajib, tapi disertakan untuk mencegah error font/rendering.
-fonts-dejavu-core
