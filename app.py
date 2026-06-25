@@ -23,7 +23,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import ConfusionMatrixDisplay
+import zipfile
 
+# --- TRICK KHUSUS UNTUK EKSTRAK MODEL ZIP ---
+if not os.path.exists('models') and os.path.exists('models.zip'):
+    with zipfile.ZipFile('models.zip', 'r') as zip_ref:
+        zip_ref.extractall('.')
 # ──────────────────────────────────────────────────────────────────────────
 # KONFIGURASI HALAMAN
 # ──────────────────────────────────────────────────────────────────────────
